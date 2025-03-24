@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Clientes</title>
+    <!-- [Google Font] Family -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap">
+    <!-- [Tabler Icons] -->
+    <link rel="stylesheet" href="/assets/fonts/tabler-icons.min.css">
+    <!-- [Feather Icons] -->
+    <link rel="stylesheet" href="/assets/fonts/feather.css">
+    <!-- [Font Awesome Icons] -->
+    <link rel="stylesheet" href="../assets/fonts/fontawesome.css">
+    <!-- [Material Icons] -->
+    <link rel="stylesheet" href="../assets/fonts/material.css">
+    <!-- [Template CSS Files] -->
+    <link rel="stylesheet" href="../assets/css/style.css" id="main-style-link">
+    <link rel="stylesheet" href="../assets/css/style-preset.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f4f7fc;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            text-align: center;
+            color: #4a6dff;
+            margin-top: 30px;
+            font-size: 36px;
+        }
+        .card {
+            border-radius: 10px;
+            background-color: #fff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+        }
+        .card-body {
+            padding: 20px;
+        }
+        .table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        .table th, .table td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        .table th {
+            background-color: #4a6dff;
+            color: #fff;
+        }
+        .table-hover tbody tr:hover {
+            background-color: #f1f1f1;
+        }
+        .btn {
+            border-radius: 5px;
+            padding: 10px 20px;
+            color: #fff;
+            background-color: #4a6dff;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .btn:hover {
+            background-color: #3358d1;
+        }
+        .btn-light-primary {
+            background-color: #5f6368;
+        }
+        .btn-light-primary:hover {
+            background-color: #4e555b;
+        }
+        .table-responsive {
+            overflow-x: auto;
+        }
+        .actions {
+            display: flex;
+            gap: 10px;
+        }
+        .actions a {
+            text-decoration: none;
+        }
+        .actions button {
+            padding: 8px 16px;
+            font-size: 14px;
+        }
+        .btn-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Clientes</h1>
+<div class="col-md">
+    <div class="card">
+        <div class="card-body table-border-style">
+            <div class="table-responsive">
+                <table class="table table-styling table-hover table-striped table-dark">
+                    <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nombre</th>
+                        <th>Dirección</th>
+                        <th>Teléfono</th>
+                        <th>Editar/Eliminar</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Aldo Ortiz Piña</td>
+                        <td>Calle Veracruz 298, Colonia Lazaro Cardenas</td>
+                        <td>4924561245</td>
+                        <td class="actions">
+                            <a href="/Listado/Editar">
+                                <button type="button" class="btn btn-light-primary">Editar</button>
+                            </a>
+                            <a href="/Listado/Eliminar">
+                                <button type="button" class="btn btn-light-primary">Eliminar</button>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Sayra Herrera Hernandez</td>
+                        <td>Calle Cerro Proaño 110, Colonia Lomas de la pimienta</td>
+                        <td>4922048791</td>
+                        <td class="actions">
+                            <a href="/Listado/Editar">
+                                <button type="button" class="btn btn-light-primary">Editar</button>
+                            </a>
+                            <a href="/Listado/Eliminar">
+                                <button type="button" class="btn btn-light-primary">Eliminar</button>
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Emilio Muñoz</td>
+                        <td>Calle Luis Ibracamonte 306, Colonia Diaz Ordaz</td>
+                        <td>4922587649</td>
+                        <td class="actions">
+                            <a href="/Listado/Editar">
+                                <button type="button" class="btn btn-light-primary">Editar</button>
+                            </a>
+                            <a href="/Listado/Eliminar">
+                                <button type="button" class="btn btn-light-primary">Eliminar</button>
+                            </a>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="btn-container">
+    <a href="/Listado/Agregar">
+        <button type="button" class="btn">Agregar</button>
+    </a>
+    <a href="/">
+        <button type="button" class="btn">Cerrar Sesión</button>
+    </a>
+</div>
+
+<script src="/assets/js/plugins/popper.min.js"></script>
+<script src="/assets/js/plugins/simplebar.min.js"></script>
+<script src="/assets/js/plugins/bootstrap.min.js"></script>
+<script src="/assets/js/fonts/custom-font.js"></script>
+<script src="/assets/js/pcoded.js"></script>
+<script src="/assets/js/plugins/feather.min.js"></script>
+</body>
+</html>

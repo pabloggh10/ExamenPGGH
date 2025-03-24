@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Editar Clientes</title>
+    <!-- [Google Font] Family -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap">
+    <!-- [Tabler Icons] -->
+    <link rel="stylesheet" href="/assets/fonts/tabler-icons.min.css">
+    <!-- [Feather Icons] -->
+    <link rel="stylesheet" href="/assets/fonts/feather.css">
+    <!-- [Font Awesome Icons] -->
+    <link rel="stylesheet" href="../assets/fonts/fontawesome.css">
+    <!-- [Material Icons] -->
+    <link rel="stylesheet" href="../assets/fonts/material.css">
+    <!-- [Template CSS Files] -->
+    <link rel="stylesheet" href="../assets/css/style.css" id="main-style-link">
+    <link rel="stylesheet" href="../assets/css/style-preset.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f9fafb;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            text-align: center;
+            color: #4a6dff;
+            margin-top: 30px;
+            font-size: 36px;
+        }
+        .card {
+            border-radius: 10px;
+            background-color: #fff;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+        }
+        .card-body {
+            padding: 20px;
+        }
+        .table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        .table th, .table td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        .table th {
+            background-color: #4a6dff;
+            color: #fff;
+        }
+        .table input {
+            width: 100%;
+            padding: 8px;
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            margin-top: 5px;
+        }
+        .table input:focus {
+            outline: none;
+            border-color: #4a6dff;
+        }
+        .table-responsive {
+            overflow-x: auto;
+        }
+        .btn {
+            border-radius: 5px;
+            padding: 10px 20px;
+            color: #fff;
+            background-color: #4a6dff;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin-top: 20px;
+        }
+        .btn:hover {
+            background-color: #3358d1;
+        }
+        .btn-container {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Editar Clientes</h1>
+<div class="col-md">
+    <div class="card">
+        <div class="card-body table-border-style">
+            <div class="table-responsive">
+                <table class="table table-styling table-hover table-striped table-dark">
+                    <thead>
+                    <tr>
+                        <th>Dato</th>
+                        <th>Campo</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>ID</td>
+                        <td><input type="number" name="ID - cliente" value="1"></td>
+                    </tr>
+                    <tr>
+                        <td>Nombre</td>
+                        <td><input type="text" name="nombre - cliente" value="Aldo Ortiz Piña"></td>
+                    </tr>
+                    <tr>
+                        <td>Dirección</td>
+                        <td><input type="text" name="Dirección - cliente" value="Calle Veracruz 298, Colonia Lazaro Cardenas"></td>
+                    </tr>
+                    <tr>
+                        <td>Télefono</td>
+                        <td><input type="text" name="télefono" value="4924561245"></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="btn-container">
+    <a href="/Listado">
+        <button type="button" class="btn">Guardar</button>
+    </a>
+    <a href="/Listado">
+        <button type="button" class="btn">Cancelar</button>
+    </a>
+</div>
+
+<script src="/assets/js/plugins/popper.min.js"></script>
+<script src="/assets/js/plugins/simplebar.min.js"></script>
+<script src="/assets/js/plugins/bootstrap.min.js"></script>
+<script src="/assets/js/fonts/custom-font.js"></script>
+<script src="/assets/js/pcoded.js"></script>
+<script src="/assets/js/plugins/feather.min.js"></script>
+</body>
+</html>
